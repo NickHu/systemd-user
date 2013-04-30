@@ -1,0 +1,13 @@
+[Unit]
+Description=mpDris2
+After=mpd.target
+
+[Service]
+Type=dbus
+ExecStart=/usr/bin/mpDris2
+BusName=org.mpris.MediaPlayer2
+Restart=always
+
+[Install]
+WantedBy=default.target
+

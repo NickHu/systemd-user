@@ -1,0 +1,12 @@
+[Unit]
+Description=Mouse initialisation 
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xsetroot -cursor_name left_ptr 
+Restart=always
+RemainAfterExit=yes
+
+[Install]
+WantedBy=xmonad.target

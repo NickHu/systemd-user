@@ -1,0 +1,14 @@
+[Unit]
+Description=Keyboard initialisation 
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/setxkbmap -layout gb 
+ExecStart=/usr/bin/numlockx
+ExecStart=/usr/bin/xmodmap /home/nick/.Xmodmap
+Restart=always
+RemainAfterExit=yes
+
+[Install]
+WantedBy=xmonad.target

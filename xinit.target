@@ -1,0 +1,6 @@
+[Unit]
+Description=Xinitrc Stuff
+Wants=xmonad.target
+
+[Install]
+Alias=default.target

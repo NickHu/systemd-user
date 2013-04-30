@@ -1,0 +1,14 @@
+[Unit]
+Description=Screen initialisation 
+After=xorg.target
+
+[Service]
+Type=oneshot
+Environment=VDPAU_NVIDIA_NO_OVERLAY=1
+ExecStart=/usr/bin/xset -dpms
+ExecStart=/usr/bin/xset s off
+Restart=always
+RemainAfterExit=yes
+
+[Install]
+WantedBy=xmonad.target
