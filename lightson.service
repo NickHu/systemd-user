@@ -1,0 +1,10 @@
+[Unit]
+Description=Prevents screensaver during fullscreen events
+Requires=xscreensaver.service
+
+[Service]
+ExecStart=/usr/bin/lightsOn.sh 550
+Restart=always
+
+[Install]
+WantedBy=xmonad.target
