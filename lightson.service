@@ -3,6 +3,7 @@ Description=Prevents screensaver during fullscreen events
 Requires=xscreensaver.service
 
 [Service]
+Environment=DISPLAY=:0
 ExecStart=/usr/bin/lightsOn.sh 550
 Restart=always
 

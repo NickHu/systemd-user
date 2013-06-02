@@ -4,6 +4,7 @@ After=xorg.target
 
 [Service]
 Type=oneshot
+Environment=DISPLAY=:0
 ExecStart=/usr/bin/setxkbmap -layout gb 
 ExecStart=/usr/bin/numlockx
 ExecStart=/usr/bin/xmodmap /home/nick/.Xmodmap

@@ -4,6 +4,7 @@ After=xorg.target
 
 [Service]
 Type=oneshot
+Environment=DISPLAY=:0
 Environment=VDPAU_NVIDIA_NO_OVERLAY=1
 ExecStart=/usr/bin/xset -dpms
 ExecStart=/usr/bin/xset s off

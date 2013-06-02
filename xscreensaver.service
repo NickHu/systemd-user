@@ -4,6 +4,7 @@ After=xorg.target
 Conflicts=screen.service
 
 [Service]
+Environment=DISPLAY=:0
 ExecStart=/usr/bin/xscreensaver -no-splash
 Restart=always
 
