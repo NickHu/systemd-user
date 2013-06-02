@@ -1,0 +1,15 @@
+[Unit]
+Description=Lock the screen after login
+After=xorg.target
+After=xscreensaver.target
+Requires=xscreensaver.target
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/xscreensaver-command -lock
+Restart=no
+RemainAfterExit=no
+
+[Install]
+WantedBy=xmonad.target
