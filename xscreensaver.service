@@ -1,6 +1,7 @@
 [Unit]
 Description=Screensaver and lock initialisation
 After=xorg.target
+After=terminal.service
 Conflicts=screen.service
 
 [Service]
