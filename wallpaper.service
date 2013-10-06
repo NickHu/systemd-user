@@ -1,0 +1,11 @@
+[Unit]
+Description=Wallpaper initialisation 
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/feh --bg-max '/home/nick/Documents/Wallpapers/Arch.png'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=xmonad.target
