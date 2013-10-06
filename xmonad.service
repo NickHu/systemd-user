@@ -1,14 +1,9 @@
 [Unit]
 Description=Xmonad service
-Before=xinit.target
 After=xorg.target
 Requires=xorg.target
 
 [Service]
-Environment=DISPLAY=:0
-Environment=XDG_RUNTIME_DIR=/run/user/%U
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/dbus/user_bus_socket
-Environment=SHELL=/bin/zsh
 ExecStart=/usr/bin/xmonad
 Restart=always
 RestartSec=10
