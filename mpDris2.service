@@ -5,7 +5,7 @@ After=mpd.target
 [Service]
 Type=dbus
 ExecStart=/usr/bin/mpDris2
-BusName=org.mpris.MediaPlayer2
+BusName=org.mpris.MediaPlayer2.mpd
 Restart=always
 
 [Install]
