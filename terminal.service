@@ -1,12 +1,13 @@
 [Unit]
 Description=Terminal initialisation
 After=xorg.target
+Before=xscreensaver.service
 
 [Service]
 Type=oneshot
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/xrdb /home/nick/.Xresources
-Restart=always
+Restart=no
 RemainAfterExit=yes
 
 [Install]

@@ -8,7 +8,7 @@ Environment=DISPLAY=:0
 ExecStart=/usr/bin/setxkbmap -layout gb 
 ExecStart=/usr/bin/numlockx
 ExecStart=/usr/bin/xmodmap /home/nick/.Xmodmap
-Restart=always
+Restart=no
 RemainAfterExit=yes
 
 [Install]

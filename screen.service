@@ -8,7 +8,7 @@ Environment=DISPLAY=:0
 Environment=VDPAU_NVIDIA_NO_OVERLAY=1
 ExecStart=/usr/bin/xset -dpms
 ExecStart=/usr/bin/xset s off
-Restart=always
+Restart=no
 RemainAfterExit=yes
 
 [Install]
