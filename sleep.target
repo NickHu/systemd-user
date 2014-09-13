@@ -1,0 +1,4 @@
+[Unit]
+Description=Sleep
+DefaultDependencies=no
+StopWhenUnneeded=yes

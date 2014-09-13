@@ -1,6 +1,7 @@
 [Unit]
 Description=Mouse initialisation 
-After=xorg.target
+Requires=xmonad.target
+After=xmonad.target
 
 [Service]
 Type=oneshot

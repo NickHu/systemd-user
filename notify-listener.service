@@ -2,7 +2,7 @@
 Description=IRSSI notify listener
 
 [Service]
-ExecStart=/usr/local/bin/notify-listener.py
+ExecStart=/usr/bin/python2 /usr/bin/notossh -f start
 
 [Install]
 WantedBy=default.target

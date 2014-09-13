@@ -1,0 +1,12 @@
+[Unit]
+Description=Conky
+Requires=xmonad.target
+After=xmonad.target
+
+[Service]
+ExecStart=/usr/bin/conky
+Restart=always
+
+[Install]
+WantedBy=default.target
+
