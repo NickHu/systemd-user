@@ -1,6 +1,5 @@
 [Unit]
 Description=Xmonad target
-Wants=xorg.target
 Wants=xinit.target
 Requires=dbus.socket
 AllowIsolate=true

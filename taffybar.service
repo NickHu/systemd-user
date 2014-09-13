@@ -1,0 +1,12 @@
+[Unit]
+Description=Taffybar
+Requires=xmonad.target
+After=xmonad.target
+
+[Service]
+ExecStart=/home/nick/.cabal/bin/taffybar
+Restart=always
+
+[Install]
+WantedBy=xmonad.target
+

@@ -1,10 +1,9 @@
 [Unit]
 Description=Xmonad service
-After=xorg.target
-Requires=xorg.target
+Requires=xorg@0.socket
 
 [Service]
-ExecStart=/usr/bin/xmonad
+ExecStart=/home/nick/.cabal/bin/xmonad
 Restart=always
 RestartSec=10
  

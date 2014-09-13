@@ -1,6 +1,7 @@
 [Unit]
 Description=Terminal initialisation
-After=xorg.target
+Requires=xmonad.target
+After=xmonad.target
 Before=xscreensaver.service
 
 [Service]

@@ -1,6 +1,5 @@
 [Unit]
 Description=Lock the screen after login
-After=xorg.target
 After=xscreensaver.target
 Requires=xscreensaver.target
 
